@@ -6,7 +6,7 @@ title: "ReadMe.md"
 output: html_document
 ---
 
-##Getting and Cleaning Data - Course Project
+Getting and Cleaning Data - Course Project
 
 This describes the final project for the Getting and Cleaning Data class through Coursera.
 
@@ -16,7 +16,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 
 
-###The dataset includes the following files:
+The dataset includes the following files:
 
 1. 'ReadMe.md'
 
