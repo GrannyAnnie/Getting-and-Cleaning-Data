@@ -5,10 +5,10 @@ if(!file.exists("./data")){dir.create("./data")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileUrl,destfile="./data/Dataset.zip")
 
-#Unzip dataSet to /data directory
+# Unzip dataSet to /data directory
 unzipped <- unzip(zipfile="./data/Dataset.zip",exdir="./data")
 
-# Read trainings tables
+# Read training tables
 features_train <- read.table("./data/UCI HAR Dataset/train/X_train.txt")
 activity_train <- read.table("./data/UCI HAR Dataset/train/y_train.txt")
 subject_train <- read.table("./data/UCI HAR Dataset/train/subject_train.txt")
@@ -27,8 +27,6 @@ activity_labels <- read.table("./data/UCI HAR Dataset/activity_labels.txt", col.
 
 
 # Merge the training and the test sets to create one data set and name them
-
-
 subject <- rbind(subject_train, subject_test)
 activity <- rbind(activity_train, activity_test)
 features <- rbind(features_train, features_test)
