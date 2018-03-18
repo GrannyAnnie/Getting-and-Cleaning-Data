@@ -49,7 +49,7 @@ features <- features[, mean_sd_features[,1]]
 library(data.table)
 total <- cbind (subject, activity, features)
 total_mean <- total %>% group_by(activitylabel, SubjectID) %>% summarize_all(funs(mean))
-write.table(total_mean, "./data/tidy_data.txt")
+write.table(total_mean, "./data/tidy_data.txt", row.name = FALSE)
 
 
 
